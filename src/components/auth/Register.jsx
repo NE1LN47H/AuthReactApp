@@ -19,7 +19,7 @@ function Register() {
             password: password
         };
 
-        axios.post('https://worksheet-auth.mashupstack.com/register', user)
+        axios.post('API_URL', user)
             .then((response) => {
                 setErrorMessage('');
                 navigate('/');
